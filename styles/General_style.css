@@ -1,0 +1,255 @@
+/* Reset básico */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos generales */
+body {
+    background-color: #c2fad8;
+}
+
+h1 {
+    font-size: 2.0em;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 9px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* --- Estilos generales de la barra de navegación --- */
+nav {
+    background: #fff;
+    padding: 15px 20px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Posicionar la barra de Google Translate debajo del nav */
+#google_translate_element {
+    text-align: right;
+    padding: 10px 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.logo img {
+    height: 50px; 
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; 
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+/* --- Estilos para los enlaces principales de la barra de navegación --- */
+nav ul li a, .dropdown-title {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: block;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.btn_n{
+    display: inline-block;
+    background-color: white;
+    color: #2D9CDB;
+    padding: 8px 20px;
+    border: 2px solid #2D9CDB;
+    border-radius: 25px;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 0;
+    text-align: center;
+}
+
+.btn_n:hover {
+    background-color: #2D9CDB;
+    color: white;
+    border-color: #2D9CDB;
+}
+/* --- Estilos para los menús desplegables --- */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    min-width: 180px;
+}
+
+.dropdown-menu li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+}
+
+.dropdown-menu li a {
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.n_t{
+    color:#2D9CDB
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: #38A169; 
+    color: white;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #2F855A;
+}
+
+/* Estilos generales del footer */
+.footer {
+    background: #f8f8f8;
+    padding: 40px 20px;
+    color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-contact, .footer-links {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-logo {
+    width:100px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.footer-contact p i {
+    color: #28a745;
+    margin-right: 8px;
+}
+
+.footer-contact p a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-links h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 15px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #28a745;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+/* Ajustar el nav en móviles */
+@media (max-width: 900px) {
+    nav {
+        position: static; /* Hace que la barra de navegación no sea fija */
+        background: white; /* Fondo blanco */
+        text-align: center; /* Centra los elementos */
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Hace que los elementos se apilen */
+        align-items: center; /* Centra los elementos */
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Espaciado entre elementos */
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center; /* Centra el logo */
+        margin-bottom: 10px; /* Espacio debajo del logo */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-contact, .footer-links {
+        margin-bottom: 20px;
+    }
+    .footer-logo{
+        display:flex;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+}

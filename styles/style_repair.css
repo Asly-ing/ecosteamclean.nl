@@ -1,0 +1,106 @@
+.container-repairs h1,
+.section_1 h1 {
+    width: 100%;
+    font-size: 2em;
+    color: #38A169;
+    margin-bottom: 20px;
+}
+
+.section_2,
+.section_1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+    border-bottom: 1px solid #ddd;
+}
+.section_1{
+    background-color: white;
+}
+.section_2 li,
+.section_1 li {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.content {
+    max-width: 50%;
+}
+.image img {
+    max-width: 80%;
+    padding: 0;
+    border-radius: 50%; 
+    object-fit: cover; 
+    width: 500px; 
+    height: 400px; 
+}
+.section_2 {
+    padding: 50px 20px;
+    background-color: #c0f2d2;
+    text-align: center;
+}
+
+.container-repairs {
+    display: flex;
+    flex-wrap: wrap;
+    /* Centra las tarjetas */
+    gap: 20px; /* Espacio entre tarjetas */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.repair-card {
+    display: flex;
+    flex-direction: column; /* Imagen arriba, texto abajo */
+    align-items: center;
+    text-align: justify;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px; /* Tamaño fijo para todas */
+    min-height: 450px; /* Mantiene uniformidad en la altura */
+}
+
+.repair-img {
+    width: 100%;
+    height: 180px; /* Tamaño estándar para las imágenes */
+    object-fit: cover; /* Evita distorsión */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.galeria-section h1{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: #2D9CDB;
+    margin-bottom: 20px;
+}
+.container-galeria {
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    position: relative; 
+    
+}
+.swiper {
+    width: 80%; /* Ancho del carrusel */
+    position: relative; /* Añade posición relativa */
+
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+

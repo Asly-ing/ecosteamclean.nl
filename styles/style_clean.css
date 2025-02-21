@@ -1,0 +1,140 @@
+.container-repairs h1,
+.galeria-section h1,
+.section_1 h1 {
+    width: 100%;
+    font-size: 2em;
+    color: #38A169;
+    margin-bottom: 20px;
+}
+
+.galeria-section h1{
+    text-align: center;
+}
+.section_2,
+.section_1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px;
+    border-bottom: 1px solid #ddd;
+}
+
+.section_2 li,
+.section_1 li {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.content {
+    max-width: 50%;
+}
+.image img {
+    max-width: 80%;
+    padding: 0;
+    object-fit: cover;
+    width: 500px; 
+    height: 400px;
+    transform: skew(-15deg); /* Ajusta el ángulo de inclinación */
+    border-radius: 0; /* Asegura que no se haga circular */
+}
+.section_{
+    background-color: white;
+    text-align: justify;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 150px;    
+}
+.section_ img{
+    display: block;
+    margin: 0 auto;
+    width: 300px; 
+    height: auto;
+}
+.s1-list{
+    list-style: none;
+    padding: 0;
+}
+
+.s1-list li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.section_2 {
+    padding: 50px 20px;
+    background-color: #c0f2d2;
+    text-align: center;
+}
+
+.container-repairs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuye las tarjetas */
+    gap: 20px; /* Espacio entre tarjetas */
+    max-width: 1200px; /* Ajustado para dos tarjetas */
+    margin: 0 auto;
+}
+
+.repair-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    width: calc(50% - 10px); /* Dos por fila, restando el espacio */
+    min-height: 400px; /* Altura ajustada */
+    box-sizing: border-box; /* Evita que padding afecte el tamaño */
+}
+
+.repair-img {
+    width: 100%;
+    height: 150px; /* Imagen más pequeña */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Responsive: una sola columna en pantallas pequeñas */
+@media (max-width: 768px) {
+    .repair-card {
+        width: 100%; /* Se expanden en móviles */
+    }
+}
+
+.section_ h1{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: #2D9CDB;
+    margin-bottom: 20px;
+
+}
+.container-galeria {
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    position: relative; 
+    
+}
+.swiper {
+    width: 80%; /* Ancho del carrusel */
+    position: relative; /* Añade posición relativa */
+
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
